@@ -1,7 +1,7 @@
 const express = require('express')
 const app = express()
 
-
+//add as many middlewares you want but make sure you run next() after every middleware
 app.use(function(req,res,next){
   console.log("heelo from middleware");
   next();
